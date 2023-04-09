@@ -30,6 +30,18 @@ public class ValidBracketsString {
 				stack.pop();
 			}
 		}
+		int mask = 0x000F;
+		int value = 0x2222;
+		System.out.println(value&mask);
+		try {
+		Float f = new Float("3.0");
+		int x = f.intValue();
+		byte b = f.byteValue();
+		double d = f.doubleValue();
+		System.out.println(x+b+d);
+		}catch(NumberFormatException e) {
+			System.out.println("bad");
+		}
 		return stack.isEmpty();
 	}
 
